@@ -31,11 +31,6 @@ func DumpJSON(o interface{}) string {
 func IsJSONEqual(o1, o2 interface{}) bool {
 	oj1, _ := json.Marshal(o1)
 	oj2, _ := json.Marshal(o2)
-	os1 := string(oj1)
-	os2 := string(oj2)
-	if os1 != os2 {
-
-	}
 
 	om1 := make(map[string]interface{})
 	om2 := make(map[string]interface{})
